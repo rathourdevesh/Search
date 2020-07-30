@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Advance Search</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-light bg-light">
+        <img src="googlelogo.png" width="100" height="40" alt="">
+        <a class="navbar-brand mb-0 h1" href="#"></a>
+        <div id="float-box">
+            <a href="index.html">Home</a>
+        </div>
+      </nav>
+      <div class="card">
+        <div class="card-body">
+            <h5 id="head5">Advance Search</h5>
+        </div>
+      </div>
+    <div id="search-container-adv">
+        <form action="https://google.com/search">   
+            <label for="as_q">all these words:</label>
+            <input id="as_q" class="search-box-adv" type="text" name="as_q"><br>
+            <label for="as_epq">this exact word or phrase:</label>
+            <input id="as_epq" class="search-box-adv" type="text" name="as_epq"><br>
+            <label for="as_oq">any of these words:</label>
+            <input id="as_oq" class="search-box-adv" type="text" name="as_oq"><br>
+            <label for="as_eq">none of these words:</label>
+            <input id="as_eq" class="search-box-adv" type="text" name="as_eq"><br>
+            <input id="buttons" type="submit" value="Advance Search">
+        </form>
+    </div>
+</body>
+
+</html>

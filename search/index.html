@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Search</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript">
+        function redirects(){
+            document.querySelector('#button1').addEventListener('click',() =>  {
+                window.location.href= 'https://google.com/search?q='+document.querySelector('#search-box').value;
+            });
+            document.querySelector('#button2').onclick = () => {
+                window.location.href='http://www.google.com/search?q='+document.querySelector('#search-box').value+'&btnI=Im+Feeling+Lucky';
+                };
+            };
+    </script>
+</head>
+
+<body>
+    <div id="float-box">
+        <a href="ImageSearch.html">Image Search</a>
+        <a href="AdvanceSearch.html">Advance Search</a>
+    </div>
+    <div id="search-container">
+        <img src="googlelogo.png"> 
+        <form action="javascript:;" onclick="redirects()">
+            <input id="search-box" type="text" name="q" placeholder="Search"><br>
+            <input id="button1" type="button" value="Google Search">
+            <input id="button2" type="button" value="I'm Feeling Lucky">
+        </form>
+    </div>
+</body>
+
+</html>
